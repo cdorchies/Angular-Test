@@ -1,0 +1,13 @@
+<header>
+  <h1>Felicat</h1>
+  <nav class="nav">
+    <a
+      routerLink=""
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Page d'accueil</a
+    >
+    <a routerLink="nos-chats" routerLinkActive="active">Nos chats</a>
+  </nav>
+  <button (click)="onAddNewCat()">+</button>
+</header>

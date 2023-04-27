@@ -1,0 +1,18 @@
+<footer class="footer">
+  <!-- FORMULAIRE TEMPLATE = COTE HTML -->
+  <!-- AVEC ngForm -->
+  <form #emailForm="ngForm" (ngSubmit)="onSubmitForm(emailForm)">
+    <label for="emailInput"
+      >Inscrivez-vous pour recevoir notre newsletter !</label
+    >
+    <input
+      type="email"
+      name="userEmail"
+      id="emailInput"
+      [(ngModel)]="userEmail"
+    />
+    <button type="submit">Ok !</button>
+  </form>
+
+  <p>Caroline Dorchies - 2022</p>
+</footer>

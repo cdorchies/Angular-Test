@@ -1,0 +1,15 @@
+<h1>NOS CHATS</h1>
+<div class="filter-cats">
+  <input type="text" name="" id="" [(ngModel)]="filteredCats" />
+</div>
+
+<article>
+  <section *ngFor="let cat of cats$ | async | filterNameCat: filteredCats">
+    <!-- <h2>{{ cat.name | uppercase | filterCat: 5 }}</h2> SERT A AFFICHER QUE 5 CARACTERES -->
+    <h2>{{ cat.name | uppercase }}</h2>
+    <img [src]="cat.imageUrl" [alt]="cat.name" />
+    <p>{{ cat.age }} ans</p>
+    <p *ngIf="cat.isAdopted === true; else notAdopted">Plus disponible</p>
+    <ng-template #notAdopted><p>Disponible</p></ng-template>
+  </section>
+</article>

@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Simba",
+        "sex": "Male",
+        "age": 7,
+        "imageUrl": "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "type": "Chartreux",
+        "description": "Beau petit matou noir",
+        "isAdopted": true,
+        "sterilized": true,
+        "location": "Douai",
+        "association": "",
+        "like": 55
+    },
+    {
+        "id": 2,
+        "name": "Jane",
+        "sex": "Femelle",
+        "age": 2,
+        "imageUrl": "https://images.unsplash.com/photo-1597626133663-53df9633b799?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTR8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80",
+        "type": "Européen",
+        "description": "Très belle petite fille",
+        "isAdopted": true,
+        "sterilized": true,
+        "location": "Douai",
+        "association": "Amicat",
+        "like": 45
+    },
+    {
+        "id": 3,
+        "name": "Pixie",
+        "sex": "Male",
+        "age": 5,
+        "imageUrl": "https://thumbs.dreamstime.com/b/crazy-cat-tongue-hanging-out-40087599.jpg",
+        "type": "Main Coon",
+        "description": "",
+        "isAdopted": false,
+        "sterilized": false,
+        "location": "Nice",
+        "association": "",
+        "like": 75
+    },
+    {
+        "id": 4,
+        "name": "Pépite & Seven",
+        "sex": "Males",
+        "age": 1,
+        "imageUrl": "https://rspcasa.b-cdn.net/wp-content/uploads/2019/07/kittens-hanging-1-1003x1024.jpg",
+        "type": "Européens",
+        "description": "Deux frères à adopter ensemble.",
+        "isAdopted": false,
+        "sterilized": false,
+        "location": "Sallanches",
+        "association": "Chats des Montagnes",
+        "like": 96
+    }]

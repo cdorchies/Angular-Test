@@ -1,0 +1,12 @@
+<div class="cat-card" *ngIf="cat$ | async as cat">
+  <h2>{{ cat.name | uppercase }}</h2>
+
+  <img [src]="cat.imageUrl" [alt]="cat.name" />
+
+  <p>{{ cat.description }}</p>
+  <p *ngIf="cat.location">Photo prise à {{ cat.location }}</p>
+
+  <div>
+    <a routerLink="/nos-chats">Retour</a>
+  </div>
+</div>
