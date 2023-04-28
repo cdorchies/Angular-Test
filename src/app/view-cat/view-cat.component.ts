@@ -15,8 +15,9 @@ export class ViewCatComponent implements OnInit {
   constructor(private catService: CatService, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    // GET BY ID
+    // Permet d'obtenir l'id de la route actuelle
     const theCat = +this.route.snapshot.params['id'];
+    // Le $ de this.cat$ signifie que c'est un type Observable
     this.cat$ = this.catService.getCatByID(theCat);
   }
 }

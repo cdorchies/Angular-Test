@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable, filter, map } from 'rxjs';
 import { Cat } from './../models/cat.model';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -17,7 +17,15 @@ export class CatService {
   }
 
   getCatByID(id: number): Observable<Cat> {
-    return this.httpService.get<Cat>(this.catsUrl + '/' + id);
+    return this.httpService.get<Cat[]>(this.catsUrl).pipe(
+      // Transforme le tableau en un seul chat qui correspond à l'id donné
+      map(cats => cats.find(cat => cat.id === id)),
+      // Supprime les chats undefined
+      filter(cat => !!cat),
+      // Convertit la valeur en type Cat
+      map(cat => cat as Cat)
+      // => Renverra toujours un Observable<Cat> compatible avec this.cat$ de view-cat.component.ts
+    );
   }
 
 

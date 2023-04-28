@@ -21,7 +21,9 @@ export class CatsListComponent implements OnInit {
     this.cats$ = this.catService.getCats();
   }
 
-
+  viewCat(catId: number) {
+    this.router.navigateByUrl(`nos-chats/${catId}`);
+  }
   // onViewCat() {
   //   this.router.navigateByUrl(`nos-chats/?ID=${this.cat.id}`);
   // }

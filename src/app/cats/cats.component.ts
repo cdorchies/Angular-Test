@@ -13,7 +13,4 @@ export class CatsComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  viewCat() {
-    this.router.navigateByUrl(`nos-chats/${this.cat.id}`);
-  }
 }
